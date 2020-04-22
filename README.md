@@ -12,7 +12,7 @@ This Truffle box comes with everything you need to start [developing on flash lo
     ```
     truffle unbox aave/flashloan-box
     ```
-2. Rename the `env` file and edit the following values in the file:
+2. Rename the `env` file to `.env` and edit the following values in the file:
     - Sign up for [Infura](https://infura.io/) (or a similar provider) and replace `YOUR_INFURA_KEY` with an API key for your project.
     - Replace `YOUR_ACCOUNT_KEY_FOR_DEPLOYMENT` with the private key of the ethereum account you will be using to deploy the contracts. This account will become the `owner` of the contract.
 3. Ensure your ethereum account has some ETH to deploy the contract.

@@ -1,4 +1,7 @@
 # Aave Flash Loan Truffle Box
+## ⚠️ [Known issue with latest version of Truffle (5.1.25)](https://github.com/trufflesuite/truffle/issues/3033). 
+### ✅ This box is working on Truffle v.5.1.0
+
 
 This Truffle box comes with everything you need to start [developing on flash loans](https://docs.aave.com/developers/tutorials/performing-a-flash-loan/...-with-truffle)
 

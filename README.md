@@ -1,7 +1,6 @@
 # Aave Flash Loan Truffle Box
-## ⚠️ [Known issue with latest version of Truffle (5.1.25)](https://github.com/trufflesuite/truffle/issues/3033). 
-### ✅ This box is working on Truffle v.5.1.0
-
+## :warning: [Known issue with latest version of Truffle (5.1.25)](https://github.com/trufflesuite/truffle/issues/3033).
+### :white_check_mark: This box is working on Truffle v.5.1.0
 
 This Truffle box comes with everything you need to start [developing on flash loans](https://docs.aave.com/developers/tutorials/performing-a-flash-loan/...-with-truffle)
 
@@ -54,7 +53,7 @@ If you are working across protocols, such as using the flash loaned amount on an
     Open terminal, replace `YOUR_INFURA_KEY` in the following and run:
     ```
     ganache-cli --fork https://mainnet.infura.io/v3/YOUR_INFURA_KEY -i 1
-    ``` 
+    ```
 5. In a new terminal window in your repo directory, run:
     ```
     truffle console

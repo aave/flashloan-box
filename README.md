@@ -15,7 +15,7 @@ This Truffle box comes with everything you need to start [developing on flash lo
     truffle unbox aave/flashloan-box
     ```
 2. Rename the `env` file to `.env` and edit the following values in the file:
-    - Sign up for [Infura](https://infura.io/) (or a similar provider) and replace `YOUR_INFURA_KEY` with an API key for your project.
+    - Sign up for [Infura](https://infura.io/) (or a similar provider) and replace `YOUR_INFURA_KEY` with an API key for your project (this is called Project ID in the Infra dashboard).
     - Replace `YOUR_ACCOUNT_KEY_FOR_DEPLOYMENT` with the private key of the ethereum account you will be using to deploy the contracts. This account will become the `owner` of the contract.
 3. Ensure your ethereum account has some ETH to deploy the contract.
 4. In your terminal, navigate to your repo directory and install the dependencies (if not already done):
@@ -50,7 +50,7 @@ If you are working across protocols, such as using the flash loaned amount on an
 2. (Install and) Run [Ganache](https://www.trufflesuite.com/ganache), preferably the [CLI version](https://github.com/trufflesuite/ganache-cli)
 3. In `truffle-config.js`, ensure the details for the `development` network match up with your running Ganache instance.
 4. To minimise set up steps with Aave's lending pools, use Ganache's fork feature. This will 'fork' mainnet into your Ganache instance.
-    Open terminal, replace `YOUR_INFURA_KEY` in the following and run:
+    Open terminal, replace `YOUR_INFURA_KEY` (this is called Project ID in the Infra dashboard) in the following and run:
     ```
     ganache-cli --fork https://mainnet.infura.io/v3/YOUR_INFURA_KEY -i 1
     ```

@@ -8,7 +8,7 @@ This Truffle box comes with everything you need to start [developing on flash lo
 
 0. Install Truffle globally, if not already installed.
     ```
-    npm install -g truffle
+    npm install -g truffle@5.10
     ```
 1. Download the box.
     ```

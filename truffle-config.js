@@ -28,7 +28,7 @@ module.exports = {
 		skipDryRun: true
 	  },
 	  mainnet: {
-	    provider: new HDWalletProvider(process.env.DEPLOYMENT_ACCOUNT_KEY, "https://mainnet.infura.io/" + process.env.INFURA_API_KEY),
+	    provider: new HDWalletProvider(process.env.DEPLOYMENT_ACCOUNT_KEY, "https://mainnet.infura.io/v3/" + process.env.INFURA_API_KEY),
 	    network_id: 1,
 	    gas: 5000000,
 	    gasPrice: 5000000000 // 5 Gwei

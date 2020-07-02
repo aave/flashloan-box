@@ -1,6 +1,4 @@
 # Aave Flash Loan Truffle Box
-## :warning: [Known issue with latest version of Truffle (5.1.25)](https://github.com/trufflesuite/truffle/issues/3033).
-### :white_check_mark: This box is working on Truffle v.5.1.0
 
 This Truffle box comes with everything you need to start [developing on flash loans](https://docs.aave.com/developers/tutorials/performing-a-flash-loan/...-with-truffle)
 
@@ -8,8 +6,10 @@ This Truffle box comes with everything you need to start [developing on flash lo
 
 0. Install Truffle globally, if not already installed.
     ```
-    npm install -g truffle@5.10
+    npm install -g truffle@latest
     ```
+    Note: there is an issue with some older Truffle versions, e.g. v.5.1.25.
+    **This truffle box is confirmed working with the latest version (Truffle v5.1.32)**
 1. Download the box.
     ```
     truffle unbox aave/flashloan-box
@@ -40,8 +40,8 @@ This Truffle box comes with everything you need to start [developing on flash lo
     ```
     - if the above operation takes an unreasonably long time or timesout, try `CTRL+C` to exit the Truffle console, repeat step 5, then try this step agin. You may need to wait a few blocks before your node can 'see' the deployed contract.
 9. If you've successfully followed the above steps, then congratulations, you've just made a flash loan.
-    - For reference, here is an [example transaction](https://ropsten.etherscan.io/tx/0x7877238373ffface4fb2b98ca4db1679c64bc2c84c7754432aaab994a9b51e17) that followed the above steps on `Kovan` using **Dai**.
-    - For reference, here is an [example transaction](https://ropsten.etherscan.io/tx/0x32eb3e03e00803dc19a7d2edd0a0a670756fbe210be81697be312518baeb16cc) that followed the above steps on `Kovan` using **ETH**.
+    - For reference, here is an [example transaction](https://ropsten.etherscan.io/tx/0x7877238373ffface4fb2b98ca4db1679c64bc2c84c7754432aaab994a9b51e17) that followed the above steps on `Ropsten` using **Dai**.
+    - For reference, here is an [example transaction](https://ropsten.etherscan.io/tx/0x32eb3e03e00803dc19a7d2edd0a0a670756fbe210be81697be312518baeb16cc) that followed the above steps on `Ropsten` using **ETH**.
 
 ## Setup for cross protocol flash lending
 If you are working across protocols, such as using the flash loaned amount on another #DeFi protocol, sometimes it is easier to fork mainnet and use each protocol's production contracts and production ERC20 tokens.

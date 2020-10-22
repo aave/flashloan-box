@@ -49,7 +49,7 @@ If you are working across protocols, such as using the flash loaned amount on an
 1. Follow the steps 0 --> step 4 from above.
 2. (Install and) Run [Ganache](https://www.trufflesuite.com/ganache), preferably the [CLI version](https://github.com/trufflesuite/ganache-cli)
 3. In `truffle-config.js`, ensure the details for the `development` network match up with your running Ganache instance.
-4. To minimise set up steps with Aave's lending pools, use Ganache's fork feature. This will 'fork' mainnet into your Ganache instance.
+4. To minimize set up steps with Aave's lending pools, use Ganache's fork feature. This will 'fork' mainnet into your Ganache instance.
     Open terminal, replace `YOUR_INFURA_KEY` (this is called Project ID in the Infra dashboard) in the following and run:
     ```
     ganache-cli --fork https://mainnet.infura.io/v3/YOUR_INFURA_KEY -i 1
@@ -76,7 +76,7 @@ If you are working across protocols, such as using the flash loaned amount on an
 
 ## Known issues
 ### No access to archive state errors
-If you are using Ganache to fork a network, then you may have issues with the blockchain archive state every 30 minutes. This is due to your node provider (i.e. Infura) only allowing free users access to 30 minutes of archive state. To solve this, upgrade to a paid plan, or simply restart your ganache instance and redploy your contracts.
+If you are using Ganache to fork a network, then you may have issues with the blockchain archive state every 30 minutes. This is due to your node provider (i.e. Infura) only allowing free users access to 30 minutes of archive state. To solve this, upgrade to a paid plan, or simply restart your ganache instance and redeploy your contracts.
 
 ### Unable to debug executeOperation() with mainnet ganache fork
 The Truffle debugger does not work too well with proxy / complex calls. You may find that the Truffle debugger returns an error such as:

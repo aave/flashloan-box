@@ -11,7 +11,7 @@
   "repository": "https://github.com/aave/flashloan-box",
   "dependencies": {},
   "devDependencies": {
-    "@openzeppelin/contracts": "^3.0.0",
+    "@openzeppelin/contracts": "^4.7.2",
     "@truffle/hdwallet-provider": "^1.0.36",
     "dotenv": "^8.2.0",
     "truffle": "^5.1.32"
